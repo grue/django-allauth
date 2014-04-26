@@ -208,7 +208,7 @@ class AppSettings(object):
 
     @property
     def PASSWORD_CHANGE_SUCCESS(self):
-        return self._setting('CHANGE_PASSWORD_SUCCESS_VIEW', 'iaaccount_change_password')
+        return self._setting('CHANGE_PASSWORD_SUCCESS_VIEW', 'account_change_password')
 
 
 # Ugly? Guido recommends this himself ...
