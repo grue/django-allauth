@@ -418,7 +418,7 @@ email = login_required(EmailView.as_view())
 class PasswordChangeView(FormView):
     template_name = "account/password_change.html"
     form_class = ChangePasswordForm
-    success_url = reverse_lazy("account_change_password")
+    success_url = reverse_lazy(app_settings.PASSWORD_CHANGE_SUCCESS)
 
     def dispatch(self, request, *args, **kwargs):
         if not request.user.has_usable_password():

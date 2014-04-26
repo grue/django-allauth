@@ -206,6 +206,11 @@ class AppSettings(object):
         return self._setting('USER_MODEL_EMAIL_FIELD', 'email')
 
 
+    @property
+    def PASSWORD_CHANGE_SUCCESS(self):
+        return self._setting('CHANGE_PASSWORD_SUCCESS_VIEW', 'iaaccount_change_password')
+
+
 # Ugly? Guido recommends this himself ...
 # http://mail.python.org/pipermail/python-ideas/2012-May/014969.html
 import sys
